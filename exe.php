@@ -40,5 +40,16 @@ if(isset($_POST['send']) && ($_POST['token']))
 
 }
 
+if(isset($_POST['Cancel']) && ($_POST['token']) && (token_check($_POST['token'])==true) )
+{
+
+    unset($_SESSION['token']);
+   
+    header('location:index.php');
+
+}
+
+
+
 
 ?>

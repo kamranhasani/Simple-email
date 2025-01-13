@@ -80,7 +80,7 @@ function tokenemail()
 
              $mail->SmtpClose();
 
-               return;
+               return true;
         
                
 
