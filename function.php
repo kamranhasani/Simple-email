@@ -57,7 +57,7 @@ function tokenemail()
                 $mail->Host       = 'smtp.gmail.com';                    
                 $mail->SMTPAuth   = true;                                   
                 $mail->Username   = $to;                   
-                $mail->Password   = 'lzoj lbao cnww okdn';                                
+                $mail->Password   = 'XXXX-XXXX-XXXX';               //password- two step                 
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                 $mail->Port       = 465;      
         
@@ -75,7 +75,7 @@ function tokenemail()
                   return $mail;
                 }
             } catch (Exception $e) {
-                echo 'خطا در ارسال ایمیل مجددا تلاش نمایید و یا با مدیرت تماس حاصل فرمایید...', $mail->ErrorInfo;
+                echo 'Problem sending email', $mail->ErrorInfo;
             }
 
              $mail->SmtpClose();
